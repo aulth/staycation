@@ -13,7 +13,7 @@ const Upload = () => {
   }
   const handleOnSubmit = async (e)=>{
       e.preventDefault()
-      const url = 'http://localhost:5000/upload/file';
+      const url = 'https://singa-backend.herokuapp.com/upload/file';
       let formData = new FormData();
       formData.append('file', document.getElementById('file').files[0]);
       const response = await fetch(url, {

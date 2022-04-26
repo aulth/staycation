@@ -35,7 +35,6 @@ const Register = () => {
       if(localStorage.getItem('auth-token') !== null){
         navigate('/packages')
       }
-
     }, [navigate])
     
   return (
